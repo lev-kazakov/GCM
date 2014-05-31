@@ -1,20 +1,25 @@
 {
-  "name": "GCM_Server_Express",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "express": "3.4.7",
-    "jade": "*"
-  },
+  "name": "GCM",
+  "version": "0.0.0",
   "description": "Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)\r  ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))",
   "main": "app.js",
+  "dependencies": {
+    "express": "~3.4.8",
+    "jade": "~1.3.1",
+    "logfmt": "~1.1.2"
+  },
   "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lev-kazakov/GCM.git"
+  },
   "author": "",
-  "license": "BSD-2-Clause"
-  "engines": {
-    "node": "0.10.x"
-  }
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/lev-kazakov/GCM/issues"
+  },
+  "homepage": "https://github.com/lev-kazakov/GCM"
 }
