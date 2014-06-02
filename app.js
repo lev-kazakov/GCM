@@ -42,10 +42,10 @@ app.post('/', function(req, res){
 
 //APA91bHCVTF_nDeo58PudKU_urBG6D-Sy7cv3lPbMMUe7MnYSUnSYvXH-GRzmkobja7rCMoJSsHjfw9tAZ932d7rOYj-CfUsBMFE1toOXI8_k1NEq653CB3AtAwRBy__aaullSYcT7SBJh9zMntoLbn-kZUV88kC5Hcubx5z0dmU_xX0M1WWw1Q
 
-function SayHey(regid, name) { 
+function SayHey(regid, name, count) { 
     var post_data = JSON.stringify({
         "data": {
-            "title": "hey " + name + "!",
+            "title": "hey " + name + "! " + count,
             "message": "message"
         },
         "registration_ids": [regid]
