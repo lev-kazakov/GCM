@@ -21,7 +21,7 @@ app.post('/', function(req, res){
 });
 
 
-function notify(regid, name) { 
+function notify(name) { 
     var post_data = JSON.stringify({
         "data": {
             "title": name + " subscribed!\n everybody say welcome!!!",
