@@ -12,7 +12,10 @@ app.listen(app.get('port'), function(){
 });
 
 app.post('/', function(req, res){
-    regids.push(req.body.regid);
+    if regids.indexOf(req.body.regid === -1) {
+        regids.push(req.body.regid);
+    }
+    
     var name = req.body.name.substring(0, req.body.name.indexOf('@'));
     
     setTimeout(function() {
@@ -24,7 +27,7 @@ app.post('/', function(req, res){
 function notify(name) { 
     var post_data = JSON.stringify({
         "data": {
-            "title": name + " subscribed!\n everybody say welcome!!!",
+            "title": name + " subscribed!\neverybody say welcome!!!",
             "message": "message"
         },
         "registration_ids": regids
