@@ -12,7 +12,7 @@ app.listen(app.get('port'), function(){
 });
 
 app.post('/', function(req, res){
-    if regids.indexOf(req.body.regid === -1) {
+    if (regids.indexOf(req.body.regid) === -1) {
         regids.push(req.body.regid);
     }
     
