@@ -5,3 +5,4 @@ lev.kazakov@gmail.com
 git push heroku master
 heroku ps:scale web=1
 heroku ps
+heroku logs --tail

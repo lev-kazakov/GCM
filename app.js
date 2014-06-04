@@ -8,7 +8,7 @@ app.set('port', process.env.PORT || 3000);
 app.use(express.bodyParser());
 
 app.listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+  console.log('Express server listening on port ' + app.get('port') + '\n');
 });
 
 app.post('/', function(req, res){
@@ -26,11 +26,11 @@ app.post('/', function(req, res){
 
 function notify(name) { 
     var post_data = JSON.stringify({
-        "data": {
-            "title": name + " subscribed!\neverybody say welcome!!!",
-            "message": "message"
+        'data': {
+            'title': name + ' subscribed :)\nEverybody say welcome !!!',
+            'message': 'message'
         },
-        "registration_ids": regids
+        'registration_ids': regids
     });
     
     var post_options = {
@@ -48,7 +48,7 @@ function notify(name) {
     var post_req = http.request(post_options, function(res) {
         res.setEncoding('utf8');
         res.on('data', function (chunk) {
-            console.log('Response: ' + chunk);
+            console.log('Response: ' + chunk + '\n');
         });
     });
     
